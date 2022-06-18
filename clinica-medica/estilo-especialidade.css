@@ -1,0 +1,126 @@
+* {
+    color: #d5d5d5;
+    /* font-family: 'Courier New', Courier, monospace; */
+  }
+
+
+
+
+  /*Inicio Conteudo*/
+
+  .conteudo-especialidades{
+      text-align: center;
+  }
+  
+
+  .conteudo-menu{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .conteudo-menu a{
+      text-decoration: none;
+      font-size: 15px;
+      color: rgb(99, 98, 98);
+      /* padding: 10px 15px 0px 15px; */
+      margin: 2px 9px 22px 9px;
+  
+      border-bottom: 2px solid #4ce6e6;
+  }
+
+  .conteudo-menu a:hover{
+      color: rgb(172, 172, 172);
+      border-bottom: 2px solid #009fa5;
+  }
+
+  /*Fim Conteudo*/
+
+  /*Inicio Especialidades*/
+
+  .especialidade-horarios{
+      display: flex;
+      width: 100%;
+  }
+
+  #conteudo-apresentacao{
+      text-decoration: underline;
+      color: rgba(226, 114, 131, 0.8)
+  }
+
+  .box-especialidades{
+      padding: 0px 0 40px 0;
+  }
+
+.especialidade-horarios .especialidade-img{
+    width: 300px;
+}
+
+  /*Fim Especialidades*/
+
+  /*Inicio tabelas padrao*/
+
+  .especialidade-tbl-horarios{
+      width: 100%;
+      text-align: left;
+  }
+
+ .especialidade-tbl-horarios th {
+
+    background-color: #4ce6e6;
+    padding: 10px;
+ }
+
+ .especialidade-tbl-horarios td{
+    margin-left: 0;
+ }
+
+ table{
+    border-collapse:collapse;
+   }
+
+ .especialidade-tbl-horarios tr:nth-child(odd){
+     background-color: #f3efef;
+ }
+
+ .especialidade-tbl-horarios tr:hover{
+     background-color: rgb(241, 237, 237);
+ }
+
+  /*Fim    tabelas padrao*/
+
+  /*Inicio responsividade*/
+
+    /*Inicio telas ate 425px*/
+
+@media (max-width:425px){
+     .box-especialidades{
+        padding: 0;
+    }
+
+    .especialidade-tbl-horarios tr td{
+        font-size: 15px;
+    }
+
+    .box-especialidades{
+        padding: 0px 0 40px 0;
+    }
+}
+
+    /*Fim telas ate 425px*/
+
+    /*Inicio telas ate 768px*/
+
+@media  (max-width:768px){
+    .especialidade-horarios img{
+        display: none;
+    }
+}
+
+    /*Fim telas ate 768px*/
+
+
+  /*Fim    responsividade*/

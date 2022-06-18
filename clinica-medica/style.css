@@ -1,0 +1,283 @@
+body{
+    font-family:'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+span{
+    font-weight: bold;
+}
+
+/*Inicio Tamanho global dos containers*/
+
+.container{
+    max-width: 1024px;
+    margin: 0px auto;
+    padding: 0 5px 0 5px;
+
+    /* border: 1px solid;  */
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+*/
+    
+}
+
+/*Fim    Tamanho glocal dos containers*/
+
+/*Inicio do Menu*/
+
+.topo{
+    background-color: #00cad1;
+    width: 100%;
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.topo .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    min-height: 60px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+/* .topo-logo img{
+    width: 150px;
+} */
+
+.topo-titulo a {
+    display: flex;
+  }
+  
+.topo-logo {
+    height: 60px;
+  }
+  
+.topo-links{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+.topo-links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0px;
+    padding: 7px;
+}
+
+.topo-links a:hover{
+    color: #ffffff;
+   
+}
+
+
+/*Fim do Menu*/
+
+
+/*Inicio Banner*/
+
+.banner{
+    background-image: url('/assets/recepcao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    width: 100%;
+    height: 500px;
+}
+
+.conteudo-banner{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+
+.conteudo-banner p{
+
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*Fim    Banner*/
+
+/*Inicio Conteudo*/
+
+.conteudo-servicos,
+.conteudo-container,
+.conteudo-contato {
+    text-align: center;
+}
+
+
+.conteudo-descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Fim    Conteudo*/
+
+
+/*Inicio Especialidades*/
+
+.conteudo-especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo-especialidades img{
+    width: 300px;
+}
+
+
+.box-cards-especialidades{
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+    box-shadow:  1px 1px 10px 1px #888888;
+}
+
+.box-cards-especialidades figcaption{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.especialidades-botao{
+    text-align: center;
+    margin: 15px;
+}
+
+.especialidades-botao a{
+    padding: 10px;
+    color: #fff;
+    background-color:#00cad0 ;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*Fim Especialidades*/
+
+
+/*Inicio mapa-localizacao*/
+
+.mapa-localizacao{
+    padding: 15px;
+}
+
+/*Fim mapa-localizacao*/
+
+/*Inicio das listas do site*/
+
+ol{
+    list-style: disc;
+}
+
+/*Fim das do listas do site*/
+
+
+
+/*Inicio Rodape*/
+
+footer{
+    background-color: #0c6e71;
+}
+
+.rodape{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+}
+
+.rodape img{
+    width: 250px;
+}
+
+
+/*Fim Rodape*/
+
+
+
+/*Inicio da responsividade*/
+
+/*Inicio do site 425 px*/
+
+
+@media (max-width: 425px) {
+.topo .container { 
+    flex-direction: column; 
+    }
+
+.topo-titulo { 
+    margin: 10px 0; 
+    }
+
+.topo-links { 
+    width: 100%;
+    border-top: 1px solid #009fa5; 
+    justify-content: space-around;
+    }
+
+.conteudo-banner {
+    justify-content: center;
+}
+.conteudo-banner p{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.conteudo-doctor{
+    display: none;
+}
+
+h1{
+    font-size: 22px;
+}
+
+.banner{
+    height: 200px;
+}
+
+
+
+}
+
+/*Fim    do site 425 px*/
+
+/*Inicio do site 768 px*/
+
+@media (max-width:768px){
+    .banner{
+        height: 300px;
+    }
+}
+
+
+/*Fim    do site 768 px*/
+
+/*Inicio do site 1024px px*/
+
+@media (max-width:1024px){
+    .banner{
+        height: 400px;
+    }
+}
+
+
+/*Fim    do site 1024px px*/
+
+
+/*Fim    da responsividade*/
